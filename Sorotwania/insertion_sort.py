@@ -19,18 +19,9 @@ def insertion_sort(lista):
         # Wstaw key w znalezione miejsce (tam gdzie petla sie zatrzymala)
         lista[j + 1] = key
 
-def wyswietlanieListy(lista):
-    # Przechodzimy po kazdym elemencie listy i drukujemy go z odstepem
-    for i in range(len(lista)):
-        print(lista[i], end=" ")
-    # Nowa linia na koncu
-    print()
-
-
 
 if __name__ == '__main__':
     lista = [12, 11, 13, 5, 6]
     # Sortujemy liste (funkcja modyfikuje liste "w miejscu", nic nie zwraca)
     insertion_sort(lista)
-    # Wyswietlamy posortowana liste
-    wyswietlanieListy(lista)
+    print(lista)
