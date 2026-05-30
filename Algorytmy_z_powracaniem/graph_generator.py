@@ -1,5 +1,11 @@
 import random
 
+'''
+Wyjasnianie syntax output:
+  - n = liczba wierzchołków (nodes)
+  - m = liczba krawędzi (edges) — obliczana przez edge_count() w linii 91 
+
+'''
 
 def generate_graph(n, saturation, seed=1):
     """
@@ -9,7 +15,7 @@ def generate_graph(n, saturation, seed=1):
     o zadanym wspolczynniku nasycenia krawedziami.
 
     Reprezentacja: macierz sasiedztwa (lista list, wartosci 0/1).
-    Zwraca: adj  (adj[u][v] == 1  <=>  istnieje krawedz u-v)
+    Zwraca: adj  (adj[u][v] == 1  <=>  istnieje krawedz u-v
     """
     rng = random.Random(seed)
     max_edges = n * (n - 1) // 2
